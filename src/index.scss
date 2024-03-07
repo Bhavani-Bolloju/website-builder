@@ -19,6 +19,7 @@
   --text-color--8: #ef4c5d; //deals offer text color
   --text-color--9: #b6bdc4; //footer text color
   --text-color--10: #ffb80f; //rating color
+  --text-color--11: #727d87; //rating color
 
   --border-color: #e1e4e6; //border color
   --color-white: #fff; //footer text titles color
@@ -58,7 +59,6 @@ html {
 }
 
 body {
-  // min-height: 100vh;
   font-size: var(--text-regular);
   font-weight: var(--font-inter--regular);
   background-color: var(--bg-color--6);

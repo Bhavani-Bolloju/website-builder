@@ -64,7 +64,7 @@ function WebsiteBuilders() {
         </div>
       </div> */}
       <WebsiteBuilderItem
-        serialNum="01"
+        serialNum="1"
         builderImage={image}
         builderName="builder 1"
         ratingStars={stars}
@@ -77,7 +77,7 @@ function WebsiteBuilders() {
         highlightsText="[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."
       />
       <WebsiteBuilderItem
-        serialNum="02"
+        serialNum="2"
         builderImage={image}
         builderName="builder"
         ratingStars={stars}
@@ -90,7 +90,7 @@ function WebsiteBuilders() {
         highlightsText="[What You Get]: Gain access to the SiteCraft design studio, featuring a robust selection of design elements, SEO optimization tools, and e-commerce integrations."
       />
       <WebsiteBuilderItem
-        serialNum="03"
+        serialNum="3"
         builderImage={image}
         builderName="builder"
         ratingStars={stars}
@@ -103,7 +103,7 @@ function WebsiteBuilders() {
         highlightsText="[What You Get]: Receive the WixPro website builder suite, access to premium design templates, an extensive library of widgets and apps, and detailed step-by-step guides."
       />
       <WebsiteBuilderItem
-        serialNum="04"
+        serialNum="4"
         builderImage={image}
         builderName="CDK"
         ratingStars={stars}
