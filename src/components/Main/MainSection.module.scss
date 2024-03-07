@@ -1,5 +1,15 @@
 .main {
   padding: 5rem 25rem;
+
+  @media screen and (max-width: 1300px) {
+    padding: 5rem 15rem;
+  }
+  @media screen and (max-width: 1111px) {
+    padding: 5rem 8rem;
+  }
+  @media screen and (max-width: 950px) {
+    padding: 5rem;
+  }
 }
 
 .subscribe {
@@ -43,12 +53,22 @@
   gap: 8rem;
   font-size: var(--text-small);
   margin-bottom: 2rem;
+
+  @media screen and (max-width: 800px) {
+    gap: 5rem;
+  }
+  @media screen and (max-width: 700px) {
+    gap: 3rem;
+  }
+  @media screen and (max-width: 600px) {
+    flex-wrap: wrap;
+  }
 }
 
 .navigation {
   display: flex;
   gap: 1rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
   font-size: var(--text-small);
   color: var(--text-color--11);
   span {

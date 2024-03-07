@@ -1,8 +1,4 @@
-// import React from "react";
 import classes from "./HeaderNav.module.scss";
-// import Button from "react-bootstrap/Button";
-// import Form from "react-bootstrap/Form";
-// import InputGroup from "react-bootstrap/InputGroup";
 
 function HeaderNav() {
   return (
