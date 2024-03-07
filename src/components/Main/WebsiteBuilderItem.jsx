@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 // import React from 'react'
 
+import tick from "../../assets/tick.svg";
 import classes from "./WebsiteBuilderItem.module.scss";
 
 function WebsiteBuilderItem({
@@ -33,7 +34,46 @@ function WebsiteBuilderItem({
         <h3 className={classes["builder__content--highlights"]}>
           Main highlights
         </h3>
-        <p className={classes["builder__highlight-text"]}>{highlightsText}</p>
+        {highlightsText !== "" && (
+          <p className={classes["builder__highlight--text"]}>
+            {highlightsText}
+          </p>
+        )}
+        {highlightsText === "" && (
+          <div className={classes["builder__highlight--container"]}>
+            <ul className={classes["builder__highlight--list"]}>
+              <li>
+                <span>9.9</span>
+                <span>building responsive</span>
+              </li>
+              <li>
+                <span>8.9</span>
+                <span>cool</span>
+              </li>
+              <li>
+                <span>7.9</span>
+                <span>docs</span>
+              </li>
+            </ul>
+            <div className={classes["builder__highlight--infolist"]}>
+              <p>why do we love</p>
+              <ul>
+                <li>
+                  <img src={tick} alt="tick" />
+                  <span>documentation</span>
+                </li>
+                <li>
+                  <img src={tick} alt="tick" />
+                  <span>easy use</span>
+                </li>
+                <li>
+                  <img src={tick} alt="tick" />
+                  <span>out of box</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        )}
       </div>
       <button className={classes["builder__show-more"]}>
         <span>Show more</span>
@@ -52,18 +92,22 @@ function WebsiteBuilderItem({
         </svg>
       </button>
       <div className={classes["builder__rating"]}>
-        <div>{ratingNum}</div>
-        <div>{ratingDescription}</div>
+        <div className={classes["builder__rating--num"]}>{ratingNum}</div>
+        <div className={classes["builder__rating--description"]}>
+          {ratingDescription}
+        </div>
         <div>
           <img src={ratingStars} alt="stars" />
         </div>
       </div>
       <button className={classes["builder__view-more"]}>view more</button>
 
-      <div className={classes["tag"]}>
-        <img src={tagImage} alt={tagTitle} />
-        <span>{tagTitle}</span>
-      </div>
+      {tagTitle !== "" && tagImage !== "" && (
+        <div className={classes["tag"]}>
+          <img src={tagImage} alt={tagTitle} />
+          <span>{tagTitle}</span>
+        </div>
+      )}
     </div>
   );
 }
