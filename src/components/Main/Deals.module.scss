@@ -1,0 +1,17 @@
+.deals {
+  margin-top: 10rem;
+  &__heading {
+    color: var(--text-color--1);
+    font-size: var(--heading--2);
+    font-weight: var(--font-inter--regular);
+  }
+  &__list {
+    display: flex;
+    margin-top: 5rem;
+    gap: 5rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
