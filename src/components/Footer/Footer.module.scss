@@ -11,6 +11,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media screen and (max-width: 850px) {
+      padding: 0 10rem;
+    }
+    @media screen and (max-width: 750px) {
+      padding: 0 5rem;
+    }
+
+    @media screen and (max-width: 650px) {
+      padding: 0 2rem;
+    }
   }
 
   &__links {
@@ -29,6 +40,12 @@
     list-style: none;
     font-size: var(--text-small);
     padding: 0;
+
+    @media screen and (max-width: 550px) {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
   }
   li {
     text-transform: capitalize;

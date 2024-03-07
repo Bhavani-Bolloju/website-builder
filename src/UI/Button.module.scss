@@ -8,4 +8,13 @@
   border: none;
   border-radius: 1.2rem;
   // background-color: mistyrose;
+
+  @media screen and (max-width: 950px) {
+    width: 15rem;
+    height: 3.5rem;
+  }
+  @media screen and (max-width: 950px) {
+    width: 10rem;
+    height: 2.5rem;
+  }
 }
