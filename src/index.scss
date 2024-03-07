@@ -18,22 +18,30 @@
   --text-color--7: #9fa9b3; //deals price text  color
   --text-color--8: #ef4c5d; //deals offer text color
   --text-color--9: #b6bdc4; //footer text color
-  --text-color--10: #fff; //footer text titles color
-  --text-color--11: #ffb80f; //rating color
+  --text-color--10: #ffb80f; //rating color
 
-  --border-color--1: #e1e4e6; //border color
+  --border-color: #e1e4e6; //border color
+  --color-white: #fff; //footer text titles color
 
   //font weights
-  --font-regular: 400;
-  --font-bold: 600;
+  --font-inter--regular: 400;
+  --font-inter--bold: 600;
 
   //font sizes
   --heading--1: 4.8rem;
   --heading--2: 3.2rem;
-  --font-regular: 1.6rem;
-  --font-normal: 1.5rem;
-  --font-small: 1.4rem;
-  --font-extra-small: 1.3rem;
+  --text-regular: 1.6rem;
+  --text-normal: 1.5rem;
+  --text-small: 1.4rem;
+  --text-extra-small: 1.3rem;
+
+  //widths
+
+  --width-body: 105rem;
+
+  //heights
+
+  --height-header: 6.4rem;
 }
 
 *,
@@ -50,5 +58,15 @@ html {
 
 body {
   min-height: 100vh;
-  font-size: 1.6rem;
+  font-size: var(--text-regular);
+  font-weight: var(--font-inter--regular);
+  background-color: var(--bg-color--6);
+  color: var(--text-color--2);
+}
+
+.input-group {
+  // display: flex;
+  button {
+    // background-color: red;
+  }
 }
