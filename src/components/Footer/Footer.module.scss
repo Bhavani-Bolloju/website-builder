@@ -5,9 +5,11 @@
   color: var(--text-color--9);
 
   &__container {
-    width: var(--width-body);
+    // : var(--width-body);
+    padding: 0 20rem;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 

@@ -24,7 +24,7 @@ function Footer() {
             <li>about</li>
           </ul>
         </div>
-        <div>united states</div>
+        {/* <div>united states</div> */}
       </div>
     </footer>
   );
