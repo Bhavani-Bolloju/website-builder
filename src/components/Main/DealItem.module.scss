@@ -1,0 +1,58 @@
+.deal {
+  max-width: 33rem;
+  display: flex;
+  flex-direction: column;
+  &__image {
+    margin-bottom: 2rem;
+    width: 14rem;
+    height: 10rem;
+    align-self: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__offer {
+    display: flex;
+    gap: 1rem;
+    text-transform: capitalize;
+    font-size: var(--text-small);
+
+    span {
+      background-color: var(--bg-color--3);
+      padding: 5px;
+      color: var(--text-color--5);
+    }
+  }
+  &__name {
+    font-weight: var(--font-inter--bold);
+    margin: 1rem 0;
+    color: var(--text-color--6);
+    font-size: var(--text-regular);
+    align-self: center;
+  }
+  &__title {
+    color: var(--text-color--6);
+    font-size: var(--text-regular);
+    text-transform: capitalize;
+  }
+  &__pricing {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+  }
+  &__final-price {
+    font-size: var(--text-medium);
+    color: var(--text-color--4);
+  }
+  &__original-price {
+    color: var(--text-color--7);
+    font-size: var(--text-small);
+  }
+  &__offer-percentage {
+    color: var(--text-color--8);
+    font-size: var(--text-extra-small);
+  }
+}

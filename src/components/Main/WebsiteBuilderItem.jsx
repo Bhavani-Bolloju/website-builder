@@ -2,6 +2,7 @@
 // import React from 'react'
 
 import tick from "../../assets/tick.svg";
+import Button from "../../UI/Button";
 import classes from "./WebsiteBuilderItem.module.scss";
 
 function WebsiteBuilderItem({
@@ -31,6 +32,7 @@ function WebsiteBuilderItem({
           </span>
           {contentText}
         </p>
+        {highlightsText === "" && <p>26% off</p>}
         <h3 className={classes["builder__content--highlights"]}>
           Main highlights
         </h3>
@@ -100,7 +102,7 @@ function WebsiteBuilderItem({
           <img src={ratingStars} alt="stars" />
         </div>
       </div>
-      <button className={classes["builder__view-more"]}>view more</button>
+      <Button>view more</Button>
 
       {tagTitle !== "" && tagImage !== "" && (
         <div className={classes["tag"]}>

@@ -1,11 +1,11 @@
 // import React from "react";
-import classes from "./WebsiteBuilders.module.scss";
 import image from "../../assets/builder-img.svg";
 import stars from "../../assets/rating-stars.svg";
 import bestChoice from "../../assets/best-choice.svg";
 import bestValue from "../../assets/best-value.svg";
 import WebsiteBuilderItem from "./WebsiteBuilderItem";
 // import
+import classes from "./WebsiteBuilders.module.scss";
 
 function WebsiteBuilders() {
   return (
@@ -105,7 +105,7 @@ function WebsiteBuilders() {
       <WebsiteBuilderItem
         serialNum="04"
         builderImage={image}
-        builderName="builder"
+        builderName="CDK"
         ratingStars={stars}
         tagImage=""
         tagTitle=""
