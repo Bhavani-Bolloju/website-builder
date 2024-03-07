@@ -4,8 +4,7 @@
     min-content max-content minmax(500px 1fr)
     min-content;
   grid-template-rows: repeat(2, auto);
-  max-width: var(--width-body);
-  margin: auto;
+
   column-gap: 5rem;
   padding: 0 3rem;
   color: var(--text-color--2);

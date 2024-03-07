@@ -66,8 +66,15 @@ body {
 }
 
 .input-group {
-  // display: flex;
+  width: 80%;
+  margin: auto;
+
+  input {
+    &::placeholder {
+      font-size: var(--text-regular);
+    }
+  }
   button {
-    // background-color: red;
+    width: 20%;
   }
 }
